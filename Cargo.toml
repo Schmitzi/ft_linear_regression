@@ -1,0 +1,29 @@
+[package]
+name = "ft_linear_regression"
+version = "0.1.0"
+edition = "2024"
+authors = ["Michael Naysmith <contact@schmitzi.nz>"]
+
+[dependencies]
+csv = "1"
+plotters = { version = "0.3", default-features = false, features = ["bitmap_backend", "bitmap_encoder", "line_series", "point_series", "ttf"] }
+
+[[bin]]
+name = "predict"
+path = "src/predict/main.rs"
+
+[[bin]]
+name = "train"
+path = "src/train/main.rs"
+
+[[bin]]
+name = "plot"
+path = "src/plot/main.rs"
+
+[[bin]]
+name = "precision"
+path = "src/precision/main.rs"
+
+[lib]
+name = "ft_linear_regression"
+path = "src/lib.rs"
